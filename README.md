@@ -1,2 +1,2 @@
-# BOOTCAMP_UM6P
+# BOOTCAMP_Python
 <img src="https://summerofcode.withgoogle.com/static/img/home-banner-world.png" width="250"> 
