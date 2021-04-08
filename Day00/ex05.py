@@ -23,3 +23,9 @@ def kata03(phrase):
         k++
     print(k)
 phrase = "The right format"
+
+def kata04()
+    tup = ( 0, 4, 132.42222, 10000, 12345.67)
+    print("module_{:0>2d}".format(tup[0] + "ex_{:0>2d}".format(tup[1]) + ": %.3f", %tup[2] + ", %x", %tup[3] + ", %x" %tup[4])
+    
+    
