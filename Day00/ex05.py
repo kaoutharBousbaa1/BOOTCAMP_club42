@@ -1,31 +1,25 @@
-def kata00(tuple):
-    n = len(tuple)
-    k = 0
-    for i in range(n):
-        k++
-        print("the", k ,"numbers are")
-    for c in tuple:
-        print(c)
+def kata00((19,42,21)):
+    print("The 3 numbers are: {0[0]}, {0[1]}, {0[2]}".format(tuple))
 
-def kata01(dict()):
-    for cle in dict.keys() and for valeur in dict.values():
-        print(cle)
-        print("was created by")
-        print(cle)
-        print("\n")
+def kata01(dictionary):
+    print("{0} was created by {0}".format(**dictionary))
+languages = {
+    'Python': 'Guido van Rossum',
+    'Ruby': 'Yukihiro Matsumoto',
+    'PHP': 'Rasmus Lerdorf',
+    }
+kata01(languages)
 
-def kata02():
-    tuple = (3, 30, 2019, 9, 35)
-    print(tuple[3],"/")
-    print(tuple[4],"/")
-    print(tuple[2],"/")
-    print(tuple[0], ":")
-    print(tuple[1])
+def kata02(tup):
+    print("{0[3]/{0[6]}/{0[2]}".format(tup) + "{:2d}:{0[1]}".format(tup[0], tup))
+tup = (3,30,2019,9,25)
+kata02(tup)
 
 
-def kata03(string):
-    print("----------------------------------The ", string)
+def kata03(phrase):
+    print("----------------------------------", phrase + "%")
     k = 0
     for i in string:
         k++
     print(k)
+phrase = "The right format"
