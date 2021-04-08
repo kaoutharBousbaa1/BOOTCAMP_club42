@@ -12,4 +12,4 @@ def reverse_function(sentence):
     
     return sentence
 
-print(reverse_function("Hello World"))
+printf(reverse_function("Hello World"))
