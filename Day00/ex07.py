@@ -1,6 +1,7 @@
 def function(sentence, n):
+    words = sentence.split(' ')
     liste = []
-    for i in sentence:
-        if len(i) >= n:
-            liste.append(i)
+    for words in sentence:
+        if len(words) >= n:
+            liste.append(words)
     return liste
