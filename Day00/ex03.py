@@ -11,11 +11,11 @@ def text_analyzer(text_to_analyze):
                 i++
             else:
                 j++
-        print("===========The text contains", c ,"characters==========\n\n")
-        print(k ,"upper letters\n")
-        print(l ,"lower letters\n")
-        print(i ,"punctuation marks\n")
-        print(j ,"spaces")
+        printf("===========The text contains", c ,"characters==========\n\n")
+        printf(k ,"upper letters\n")
+        printf(l ,"lower letters\n")
+        printf(i ,"punctuation marks\n")
+        printf(j ,"spaces")
      except:
         printf("Please type a valid sentence to the given function!")
 
