@@ -6,11 +6,11 @@ try:
   product = num1 * num2
   division = num1 / num2
   modulus = num1 % num2
-  print('Sum of ',num1 ,'and' ,num2 ,'is :',addition, end = '\n')
-  print('Difference of ',num1 ,'and' ,num2 ,'is :',difference, end = '\n')
-  print('Product of' ,num1 ,'and' ,num2 ,'is :',product, end = '\n')
-  print('Division of ',num1 ,'and' ,num2 ,'is :',division, end = '\n')
-  print('Modulus of ',num1 ,'and' ,num2 ,'is :',modulus)
+  printf('Sum of ',num1 ,'and' ,num2 ,'is :',addition, end = '\n')
+  printf('Difference of ',num1 ,'and' ,num2 ,'is :',difference, end = '\n')
+  printf('Product of' ,num1 ,'and' ,num2 ,'is :',product, end = '\n')
+  printf('Division of ',num1 ,'and' ,num2 ,'is :',division, end = '\n')
+  printf('Modulus of ',num1 ,'and' ,num2 ,'is :',modulus)
   break
 except ValueError:
-  print('You have to type an integer number! ')
+  printf('You have to type an integer number! ')
