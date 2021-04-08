@@ -12,5 +12,5 @@ try:
   print('Division of ',num1 ,'and' ,num2 ,'is :',division, end = '\n')
   print('Modulus of ',num1 ,'and' ,num2 ,'is :',modulus)
   break
-  except ValueError:
-    print('You have to type an integer number! ')
+except ValueError:
+  print('You have to type an integer number! ')
