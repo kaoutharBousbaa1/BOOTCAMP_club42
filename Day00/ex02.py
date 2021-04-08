@@ -1,11 +1,11 @@
 def function(number):
     try:
         if number == 0:
-            print("The given number is equal to zero")
+            printf("The given number is equal to zero")
         if number % 2 == 0:
-            print("It's an even number")
+            printf("It's an even number")
         if number % 2 != 0
-            print("It's an odd number")
+            printf("It's an odd number")
     except ValueError:
-        print("ValueError! Please enter an integrer number")
+        printf("ValueError! Please enter an integrer number")
         
