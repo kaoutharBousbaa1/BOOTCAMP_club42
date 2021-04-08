@@ -14,15 +14,15 @@ cookbook= {
     }
 #print the keys of the dictionary 
 for cle in cookbook.keys():
-    print(cle)
+    printf(cle)
 #print the values of the dictionary
 for valeur in cookbook.values():
-    print(valeur)
+    printf(valeur)
 
 #print recipe from the cookbook
 def print_recipe(recipe):
     for valeur in cookbook.recipe.values():
-        print(valeur)
+        printf(valeur)
         
 #delete a recipe from the dictionary 
 def delete_recipe(recipe):
@@ -34,7 +34,7 @@ def add_recipe(recipe, ingredinets, meal, pre_time):
 
 def print_all(cookbook):
     for cle in cookbook.keys():
-        print(cle)
+        printf(cle)
 
 print("===============Please select an option by typing the corresponding number:=============")
 print("1: Add a recipe\n 2: Delete a recipe\n 3: Print a recipe \n4: Print the cookbook \n 5: Quit")
@@ -42,7 +42,7 @@ choice = input()
 while choice != NULL:
     switch (choice):
         case 5:
-            print("Cookbook closed")
+            printf("Cookbook closed")
             exit(0)
             break
         case 2:
@@ -61,7 +61,7 @@ while choice != NULL:
             print_all(cookbook)
             break
         else:
-            print("This option does not exist, please type the corresponding number.\nTo exit, enter 5.")
+            printf("This option does not exist, please type the corresponding number.\nTo exit, enter 5.")
 
 
 
