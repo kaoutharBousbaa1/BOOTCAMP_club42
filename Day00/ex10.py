@@ -3,6 +3,10 @@ def ft_progress(lst):
     lst = list(lst)[1:]
     taille = len(lst)
     start = time()
+    k = 0
+    if taille % 2 == 0:
+        k = 1
+        lst = lst + [lst[-1] + 1]
     for i in lst:
         now = time()
         time_elapsed = now - start
@@ -12,8 +16,8 @@ def ft_progress(lst):
         print("{:.2f}".format(time_estimated) + "s", end="")
         print("[{:>3.0f}%]".format(i * 100 / taille), end="")
         print("[{:=>{}}>{:<{}}]".format("", int((i/taille)*24), "", 24 - int((i/taille)*24)), end="")
-        print("{:{}}/{}".format(i, len(str(taille)), taille ) end="")
-        print("| elapsed time {:.2f}".format(time_elapsed) + "s", end="")  
+        print("{:{}}/{}".format(i + k, len(str(taille)), taille ), end="")
+        print("| elapsed time {:.2f}".format(time_elapsed) + "s", end="\r")  
         yield i
 
 
