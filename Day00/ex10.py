@@ -20,11 +20,18 @@ def ft_progress(lst):
         print("| elapsed time {:.2f}".format(time_elapsed) + "s", end="\r")  
         yield i
 
-
 listy = range(1000)
 ret = 0
 for elem in ft_progress(listy):
     ret += (elem + 3) % 5
     sleep(0.01)
+print()
+print(ret)
+
+listy = range(3333)
+ret = 0
+for elem in ft_progress(listy):
+    ret += elem
+    sleep(0.005)
 print()
 print(ret)
